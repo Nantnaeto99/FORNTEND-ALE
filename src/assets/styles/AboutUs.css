@@ -1,0 +1,72 @@
+/* AboutUs.css */
+
+.contact-us-container {
+    /* Styles for the overall container */
+    display: flex; /* Or block, depending on your layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally (optional) */
+    padding: 20px;
+}
+
+.contact-for {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.contact-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    height: 200px;
+    width: 600px;
+    max-width: 90%;  /* Good for responsiveness */
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Styles (Example) */
+@media (max-width: 500px) {
+    .contact-box {
+        width: 95%; 
+    }
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    grid-template-rows: auto auto;
+    row-gap: 0px;
+}

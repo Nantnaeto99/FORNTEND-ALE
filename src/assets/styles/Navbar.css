@@ -1,0 +1,148 @@
+
+/* Navbar.css */
+.navbar {
+    background-color:mediumturquoise;
+    /*padding: 1rem;*/
+    padding: 0;
+    position: relative;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    /*margin: 0 auto;*/
+}
+
+.navbar-logo {
+    /* Style your logo here */
+
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    background-color: cornflowerblue;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar-mobile-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .navbar-mobile-icon {
+        display: block;
+    }
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    .dropdown:hover .dropdown-menu, .dropdown.show .dropdown-menu {
+        display: block;
+    }
+    .dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+/* Navbar.css */
+.navbar-links .nav-link:hover {
+    color: red; /* Or any other color you prefer */
+}
+
+/*  If you want the dropdown items to also have the hover effect: */
+.navbar-links .dropdown-menu .dropdown-item:hover {
+    color: red;
+}
+
+
+/* If you want to target the dropdown toggles specifically: */
+.navbar-links .nav-link.dropdown-toggle:hover {
+    color: red;
+}
+
+
+.navbar-logo .nav-logo:hover{
+    filter: invert(28%) sepia(78%) saturate(2918%) hue-rotate(341deg) brightness(94%) contrast(93%);
+}
+
+
+
