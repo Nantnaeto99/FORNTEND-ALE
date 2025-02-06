@@ -16,6 +16,13 @@ import Opeinions from "./pages/Opinions.tsx";
 import Contact from "./pages/Contact.tsx";
 import './index.css';
 import Footer from "./components/Footer.tsx";
+// other routes
+import Admin from "./Administration_Links/admin.tsx";
+import DeputyHead from "./Administration_Links/DeputyHead.tsx";
+import HeadOffice from "./Administration_Links/HeadOffice.tsx";
+import VoicePresdant from "./Administration_Links/VoicePresdant.tsx";
+
+
 
 function App() {
 
@@ -43,6 +50,15 @@ function App() {
                 <Route path="/opeinions" Component={Opeinions} />
                 <Route path="/faq" Component={Faq} />
                 <Route path='/contact' Component={Contact} />
+
+            {/*     */}
+
+
+                     <Route path="/admin" element={<Admin />} />
+                     <Route path="/deputyhead" element={<DeputyHead />} />
+                     <Route path="/headoffice" element={<HeadOffice />} />
+                     <Route path="/vicepresdant" element={<VoicePresdant/>} />
+
             </Routes>
             <Footer/>
         </Router>

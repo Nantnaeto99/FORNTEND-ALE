@@ -4,7 +4,7 @@
  // import twitter from "../assets/images/twitter.png";
  // import Facebook from "../assets/images/Facebook.png";
 import  '../assets/styles/AboutUs.css'
- import Location from "./Location.tsx";
+ // import Location from "./Location.tsx";
 const ContactUs = () => {
     const contactInfo = {
         phone: "+251921654622",
@@ -29,9 +29,7 @@ const ContactUs = () => {
                     {/*<a href="#" target="_blank" rel="noopener noreferrer"><img src="/facebook-icon.png" alt="Facebook" /></a>*/}
                     {/*<a href="#" target="_blank" rel="noopener noreferrer"><img src="/twitter-icon.png" alt="Twitter" /></a>*/}
 
-                    <Location/>
-
-
+                    {/*<Location/>*/}
             </div>
         </div>
 
