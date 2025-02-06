@@ -21,6 +21,7 @@ const Footer = () => {
                     <li><a href="https://facebook.com" className="footer-link">Facebook</a></li>
                     <li><a href="https://twitter.com" className="footer-link">Twitter</a></li>
                     <li><a href="https://instagram.com" className="footer-link">Instagram</a></li>
+                    <li><a href="/admin" className="footer-link">admin</a></li>
                 </ul>
             </div>
         </div>

@@ -21,6 +21,7 @@ import Admin from "./Administration_Links/admin.tsx";
 import DeputyHead from "./Administration_Links/DeputyHead.tsx";
 import HeadOffice from "./Administration_Links/HeadOffice.tsx";
 import VoicePresdant from "./Administration_Links/VoicePresdant.tsx";
+import HeadofOrganization from "./Administration_Links/HeadofOrganization.tsx";
 
 
 
@@ -54,11 +55,11 @@ function App() {
             {/*     */}
 
 
-                     <Route path="/admin" element={<Admin />} />
-                     <Route path="/deputyhead" element={<DeputyHead />} />
-                     <Route path="/headoffice" element={<HeadOffice />} />
-                     <Route path="/vicepresdant" element={<VoicePresdant/>} />
-
+                 <Route path="/admin" element={<Admin />} />
+                 <Route path="/deputyhead" element={<DeputyHead />} />
+                 <Route path="/headoffice" element={<HeadOffice />} />
+                 <Route path="/vicepresdant" element={<VoicePresdant/>} />
+                 <Route path='/headoforganization' element={<HeadofOrganization/>}/>
             </Routes>
             <Footer/>
         </Router>
